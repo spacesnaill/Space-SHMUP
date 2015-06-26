@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\__Scripts\Hero.cs" />
      <Compile Include="Assets\__Scripts\Shield.cs" />
+     <Compile Include="Assets\__Scripts\Utils.cs" />
      <None Include="Assets\_Materials\UnlitAlpha.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
