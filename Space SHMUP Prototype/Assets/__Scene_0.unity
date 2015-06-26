@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1384b30a7611f478f273372dd03798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameRestartDelay: 2
   speed: 30
   rollMult: -45
   pitchMult: 30
