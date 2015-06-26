@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic; //required to use Lists or Dictionaries
 public class Main : MonoBehaviour {
     static public Main S; //singleton
+    static public Dictionary<WeaponType, WeaponDefinition> W_DEFS;
 
     public GameObject[] prefabEnemies;
     public float enemySpawnPerSecond = 0.5f; // the # enemies/second
@@ -23,6 +24,27 @@ public class Main : MonoBehaviour {
         enemySpawnRate = 1f / enemySpawnPerSecond;
         //Invoke call SpawnEnemy() once after a 2 second delay
         Invoke("SpawnEnemy", enemySpawnRate);
+
+        //a generic dictionary with WeaponType as the key
+        W_DEFS = new Dictionary<WeaponType, WeaponDefinition>();
+        foreach (WeaponDefinition def in weaponDefinitions)
+        {
+            W_DEFS[def.type] = def;
+        }
+    }
+
+    static public WeaponDefinition GetWeaponDefinition(WeaponType wt)
+    {
+        //check to make sure that the key exists in the Dictionary
+        //Attempting to retrieve a key that didn't exist, would throw an error
+        //so the follow if statent is impotant
+        if (W_DEFS.ContainsKey(wt))
+        {
+            return (W_DEFS[wt]);
+        }
+        //this will return a defintion for WeaponType.none,
+        //which means it has failed to find the WeaponDefinition
+        return (new WeaponDefinition());
     }
 
     void Start()
