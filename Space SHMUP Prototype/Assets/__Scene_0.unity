@@ -117,6 +117,7 @@ Transform:
   - {fileID: 554431493}
   - {fileID: 1886203605}
   - {fileID: 896293560}
+  - {fileID: 1612975263}
   m_Father: {fileID: 0}
   m_RootOrder: 3
 --- !u!54 &307066907
@@ -491,6 +492,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1001 &1612975262
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 307066906}
+    m_Modifications:
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1612975263 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 457712, guid: 4929f1785486e3a4aa093a77baf22148, type: 2}
+  m_PrefabInternal: {fileID: 1612975262}
 --- !u!1 &1813523885
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +703,36 @@ MonoBehaviour:
   - {fileID: 171916, guid: c00b09a6f9184fc4497c4379bf61ec2f, type: 2}
   enemySpawnPerSecond: .5
   enemySpawnPadding: 1.5
+  weaponDefinitions:
+  - type: 1
+    letter: B
+    color: {r: .661764741, g: .874036551, b: 1, a: 1}
+    projectilePrefab: {fileID: 165644, guid: f5d1b346792bed94cbc5d8412c3ae9d8, type: 2}
+    projectileColor: {r: 1, g: 1, b: 1, a: 1}
+    damageOnHit: 1
+    continuousDamage: 0
+    delayBetweenShots: .200000003
+    velocity: 50
+  - type: 2
+    letter: S
+    color: {r: .496271223, g: .480644464, b: .933823526, a: 1}
+    projectilePrefab: {fileID: 165644, guid: f5d1b346792bed94cbc5d8412c3ae9d8, type: 2}
+    projectileColor: {r: .521139681, g: .523580074, b: .875, a: 1}
+    damageOnHit: 1
+    continuousDamage: 0
+    delayBetweenShots: .400000006
+    velocity: 50
+  - type: 6
+    letter: O
+    color: {r: .207828701, g: .911764681, b: .207828701, a: 1}
+    projectilePrefab: {fileID: 0}
+    projectileColor: {r: 1, g: 1, b: 1, a: 1}
+    damageOnHit: 0
+    continuousDamage: 0
+    delayBetweenShots: 0
+    velocity: 0
   _________________: 0
+  activeWeaponTypes: 
   enemySpawnRate: 0
 --- !u!1 &1886203604
 GameObject:
