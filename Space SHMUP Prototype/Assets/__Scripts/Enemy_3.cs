@@ -55,7 +55,7 @@ public class Enemy_3 : Enemy {
         p01 = (1 - u) * points[0] + u * points[1];
         p12 = (1 - u) * points[1] + u * points[2];
         pos = (1 - u) * p01 + u * p12;
-        base.Move();
+        //base.Move();
        
     }
 
