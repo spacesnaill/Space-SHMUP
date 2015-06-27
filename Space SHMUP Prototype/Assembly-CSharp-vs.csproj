@@ -53,6 +53,7 @@
      <Compile Include="Assets\__Scripts\Enemy_4.cs" />
      <Compile Include="Assets\__Scripts\Hero.cs" />
      <Compile Include="Assets\__Scripts\Main.cs" />
+     <Compile Include="Assets\__Scripts\Parallax.cs" />
      <Compile Include="Assets\__Scripts\PowerUp.cs" />
      <Compile Include="Assets\__Scripts\Projectile.cs" />
      <Compile Include="Assets\__Scripts\Shield.cs" />
