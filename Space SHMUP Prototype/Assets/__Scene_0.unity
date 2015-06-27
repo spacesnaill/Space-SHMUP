@@ -975,6 +975,8 @@ MonoBehaviour:
     continuousDamage: 0
     delayBetweenShots: 0
     velocity: 0
+  prefabPowerUp: {fileID: 128050, guid: 3533cbbc80a4a874ab6852cc898da6e8, type: 2}
+  powerUpFrequency: 01000000010000000200000006000000
   _________________: 0
   activeWeaponTypes: 
   enemySpawnRate: 0
