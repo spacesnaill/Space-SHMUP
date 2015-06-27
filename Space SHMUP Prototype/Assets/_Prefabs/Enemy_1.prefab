@@ -179,6 +179,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1025d3542d91d4090e5724f790c971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
+  fireRate: .300000012
+  health: 10
+  score: 100
+  showDamageForFrame: 2
+  powerUpDropChance: 1
+  _________________: 0
+  bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  boundsCenterOffset: {x: 0, y: 0, z: 0}
+  originalColors: []
+  materials: []
+  remainingDamageFrames: 0
+  waveFrequency: 2
+  waveWidth: 4
+  waveRotY: 45
 --- !u!135 &13522866
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -217,6 +234,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
