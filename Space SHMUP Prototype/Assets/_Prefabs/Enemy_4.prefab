@@ -319,6 +319,30 @@ MonoBehaviour:
   remainingDamageFrames: 0
   points: []
   timeStart: 0
+  parts:
+  - name: Cockpit
+    health: 10
+    protectedBy:
+    - Fuselage
+    go: {fileID: 0}
+    mat: {fileID: 0}
+  - name: Fuselage
+    health: 10
+    protectedBy:
+    - Wing_L
+    - Wing_R
+    go: {fileID: 0}
+    mat: {fileID: 0}
+  - name: Wing_L
+    health: 10
+    protectedBy: []
+    go: {fileID: 0}
+    mat: {fileID: 0}
+  - name: Wing_R
+    health: 10
+    protectedBy: []
+    go: {fileID: 0}
+    mat: {fileID: 0}
   duration: 4
 --- !u!135 &13594098
 SphereCollider:
@@ -379,12 +403,68 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: parts.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[0].protectedBy.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[1].protectedBy.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[0].name
+      value: Cockpit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[0].health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[0].protectedBy.Array.data[0]
+      value: Fuselage
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[1].name
+      value: Fuselage
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[1].health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[1].protectedBy.Array.data[0]
+      value: Wing_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[1].protectedBy.Array.data[1]
+      value: Wing_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[2].name
+      value: Wing_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[2].health
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[3].name
+      value: Wing_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: parts.Array.data[3].health
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
